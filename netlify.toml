@@ -1,0 +1,13 @@
+[build]
+  # The command to install dependencies and build the Jekyll site
+  command = "bundle install && bundle exec jekyll build"
+  
+  # The directory where the built site will be stored (Jekyll's default output directory is _site)
+  publish = "_site"  # This is the default folder where Jekyll stores the built files
+
+[build.environment]
+  # Define the Ruby version to use (adjust this to the version you're using locally)
+  RUBY_VERSION = "3.1.0"  # Adjust the version if you're using something else
+
+  # Optional: You can specify additional environment variables here if needed
+  # JEKYLL_ENV = "production"  # This will tell Jekyll to build in production mode
